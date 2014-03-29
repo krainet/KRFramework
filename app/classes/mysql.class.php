@@ -43,7 +43,7 @@ class MySQL_Class {
         
         if($database==null || $username==null || $password==null) {
             //Load Ini file
-            $this->db_config =  $Conf->GetApiDatabaseConfig();
+            $this->db_config =  $Conf->GetDatabaseConfig();
 
             $this->database = $this->db_config['db'];
             $this->username = $this->db_config['user'];

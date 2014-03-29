@@ -37,6 +37,7 @@ define('LAYOUTS_PATH'		, APP_PATH.DS.'templates');
 define('LOGS_PATH'          , APP_PATH.DS.'logs');
 define('MODELS_PATH'		, APP_PATH.DS.'models');
 define('VIEWS_PATH'         , APP_PATH.DS.'views');
+define('THEMES_PATH'        , VIEWS_PATH.DS.'themes');
 define('CACHE_PATH'         , APP_PATH.DS.'cache');
 
 define('UPLOAD_PATH'        , PUBLIC_PATH.DS.'uploads');
@@ -46,8 +47,10 @@ define('LIBS_ON'            , 'Fw');
 
 require_once LIBS_PATH.'/KrAutoload.php';
 
-$User = new Users_Model();
+$Route = new Route_Class();
+
+$Route->LoadController($_SERVER['REQUEST_URI']);
 
 
-echo "Hello World";
+
 ?>

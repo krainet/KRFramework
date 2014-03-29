@@ -17,17 +17,27 @@ class Config_Class {
     var $conf_databases;
     var $conf_configuration;
     
+    static $conf_database_static;
+    static $conf_configuration_static;
+    
     public function __construct() {
         $this->conf_databases = parse_ini_file(CONFIG_PATH.DS.'databases.ini');
         $this->conf_configuration = parse_ini_file(CONFIG_PATH.DS.'configuration.ini');
+        self::$conf_configuration_static = parse_ini_file(CONFIG_PATH.DS.'configuration.ini');
+        self::$conf_database_static = parse_ini_file(CONFIG_PATH.DS.'databases.ini');
     }
     
-    public function GetApiDatabaseConfig() {
+    public function GetDatabaseConfig() {
         return $this->conf_databases;
     }
     
-    public function GetApiConfig() {
+    public function GetBaseConfig() {
         return $this->conf_configuration;
+    }
+    
+    public static function GetThemeName() {
+        $aConf = parse_ini_file(CONFIG_PATH.DS.'configuration.ini');
+        return $aConf['theme_name'];
     }
 }
 
