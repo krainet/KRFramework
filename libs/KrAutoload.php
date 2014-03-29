@@ -9,8 +9,6 @@ function __autoload($className) {
     $className = str_replace("..", "", $className);
     $className = strtolower($className);
 
-    error_log("Clase:: $className");
-    
     if (strpos($className, '_class')) {
         $className = str_replace("_", ".", $className);
         require_once( CLASS_PATH . "/$className.php" );
