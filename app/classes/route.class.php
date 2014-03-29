@@ -25,6 +25,9 @@ class Route_Class {
             if(isset($aChopUri[2]))
                 $sAction = $aChopUri[2];
             
+            if($sController=='favicon.ico')
+                $sController='home';
+            
             if($sController)
                 $sControllerClass = ucwords($sController).'_Controller';
             
