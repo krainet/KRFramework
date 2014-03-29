@@ -11,7 +11,6 @@ class Home_Controller extends Core_Controller {
 
     protected function pre_process() {
         $this->theme = Config_Class::GetThemeName();
-        error_log('THEME::'.$this->theme);
     }
     
     protected function process() {
@@ -19,7 +18,7 @@ class Home_Controller extends Core_Controller {
     }
     
     protected function display() {
-        include(VIEWS_PATH.DS.$this->theme.DS.'home.view.php');
+        include(THEMES_PATH.DS.$this->theme.DS.'home.view.php');
     }
 }
 
