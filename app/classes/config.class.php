@@ -1,10 +1,16 @@
 <?php
 
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 /**
  * Description of Config Class
  *
  * @author Ramón Albertí <admin@krainet.net at Krainet.net>
  */
+
 
 class Config_Class {
     
