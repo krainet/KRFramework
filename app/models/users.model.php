@@ -10,6 +10,7 @@
  *
  * @author Ramón Albertí
  */
+
 class Users_Model extends MySQL_Class {
     
     public function delete_user($id_user=null) {

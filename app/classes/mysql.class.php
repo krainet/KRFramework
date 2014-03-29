@@ -10,6 +10,7 @@
  *
  * @author ramon
  */
+
 class MySQL_Class {
 
 	// Base variables
