@@ -18,8 +18,10 @@ class Route_Class {
         } else {
         
             $aChopUri = explode('/', $url);
+            
             if(isset($aChopUri[1]))
                 $sController = $aChopUri[1];
+            
             if(isset($aChopUri[2]))
                 $sAction = $aChopUri[2];
             
