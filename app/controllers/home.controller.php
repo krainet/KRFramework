@@ -7,17 +7,19 @@
  */
 class Home_Controller extends Core_Controller {
     
+    private $theme;
 
     protected function pre_process() {
-        echo "pre";
+        $this->theme = Config_Class::GetThemeName();
+        error_log('THEME::'.$this->theme);
     }
     
     protected function process() {
-        echo "pro";
+        
     }
     
     protected function display() {
-        echo "disp";
+        include(VIEWS_PATH.DS.$this->theme.DS.'home.view.php');
     }
 }
 
