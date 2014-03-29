@@ -38,7 +38,7 @@ class MySQL_Class {
 	 * *******************/
 
 	function __construct($database = null, $username = null , $password = null, $hostname='localhost', $port=3306){
-        $Conf = new ApiConfig();
+        $Conf = new Config_Class();
         
         
         if($database==null || $username==null || $password==null) {

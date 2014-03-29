@@ -18,8 +18,8 @@ class Config_Class {
     var $conf_configuration;
     
     public function __construct() {
-        $this->conf_databases = parse_ini_file(CONFIG_DIR.DS.'databases.ini');
-        $this->conf_configuration = parse_ini_file(CONFIG_DIR.DS.'configuration.ini');
+        $this->conf_databases = parse_ini_file(CONFIG_PATH.DS.'databases.ini');
+        $this->conf_configuration = parse_ini_file(CONFIG_PATH.DS.'configuration.ini');
     }
     
     public function GetApiDatabaseConfig() {
