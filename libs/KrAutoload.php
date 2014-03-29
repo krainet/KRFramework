@@ -21,6 +21,8 @@ function __autoload($className) {
     } elseif (strpos($className, 'Fw_')) {
         $className = str_replace("_", ".", $className);
         require_once( CLASS_PATH_FW . "/$className.php" );        
+    } else {
+        return true;
     }
 
     error_log("Loaded Class :: $className.php");
