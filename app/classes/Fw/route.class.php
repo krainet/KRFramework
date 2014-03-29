@@ -6,7 +6,7 @@
  * @author Ramón Albertí <admin@krainet.net at Krainet.net>
  */
 
-class Route_Class {
+class Fw_Route {
     
     
     

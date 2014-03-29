@@ -1,10 +1,8 @@
 <html>
 <head>
-    <title><?php echo $title?></title>
+    <title>HOME TEMPLATE</title>
 </head>
 <body>
-    <?php foreach($users as $user): ?>
-        <?php echo $user?>
-    <?php endforeach;?>
+HOME TEMPLATE
 </body>
 </html>

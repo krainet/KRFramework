@@ -11,7 +11,7 @@
  * @author Ramón Albertí Danes
  */
 
-class MySQL_Class {
+class Fw_MySQL {
 
 	// Base variables
 	var $lastError;					// Holds the last error
