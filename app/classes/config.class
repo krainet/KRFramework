@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * Description of Config Class
+ *
+ * @author Ramón Albertí <admin@krainet.net at Krainet.net>
+ */
+
+class Config_Class {
+    
+    var $conf_databases;
+    var $conf_configuration;
+    
+    public function __construct() {
+        $this->conf_databases = parse_ini_file(CONFIG_DIR.DS.'databases.ini');
+        $this->conf_configuration = parse_ini_file(CONFIG_DIR.DS.'configuration.ini');
+    }
+    
+    public function GetApiDatabaseConfig() {
+        return $this->conf_databases;
+    }
+    
+    public function GetApiConfig() {
+        return $this->conf_configuration;
+    }
+}
+
+?>
