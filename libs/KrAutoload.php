@@ -17,7 +17,7 @@ function __autoload($className) {
     } elseif (strpos($className, '_model')) {
         $className = str_replace("_", ".", $className);
         require_once( MODELS_PATH . "/$className.php" );
-    } elseif (strpos($className, '_controller')) {
+    } elseif (strpos($className, '_controller') && $className!='favicon.ico') {
         $className = str_replace("_", ".", $className);
         require_once( CONTROLLERS_PATH . "/$className.php" );
     } elseif (strpos($className, 'Fw_')) {
