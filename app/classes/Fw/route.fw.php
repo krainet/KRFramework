@@ -9,6 +9,7 @@
 class Route_Fw {
     
     
+    private $is_file=0;
     
     function LoadController($url) {
         $theme_name = Config_Fw::GetThemeName();
@@ -26,10 +27,13 @@ class Route_Fw {
             if($sController)
                 $sControllerClass = ucwords($sController).'_Controller';
             
-            if(class_exists($sControllerClass)) {
-                $Controller = new $sControllerClass;
+            $this->is_file=strpos($sControllerClass, '.');
+            
+            if($this->is_file>0 && class_exists($sControllerClass)) {
+                error_log('Loading Controller:: '.$sControllerClass);
+               $Controller = new $sControllerClass;
             } else {
-                
+                error_log($sController.' is NOT a Class , is a file');
             }
 
         }
