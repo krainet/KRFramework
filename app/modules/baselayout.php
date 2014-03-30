@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">KR Framework</a>
+                <a class="navbar-brand" href="/home">KR Framework</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -41,20 +41,18 @@
         </div>
     </div>
 
+    &nbsp;<p>
     <div class="container theme-showcase" role="main">
 
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <h1>KR Framework!</h1>
+            <h1><img src='public/img/fw/logo-small.png'>&nbsp;KR Framework!</h1>
             <p>KR Framewor es un pequeño framework preparado para el diseño de webs rápidas con artquitectura MVC fácil e intuitiva.</p>
             <p><a href="http://www.krainet.net" class="btn btn-primary btn-lg" role="button">Ver más &raquo;</a></p>
         </div>
 
-        <div class="page-header">
-            <h1>Estado:</h1>
-        </div>
         <div class="alert alert-success">
-            <strong>KR Framework</strong> Funcionando!.
+            <strong>KR Framework</strong> Funcionando Correctamente!.
         </div>
 
 
