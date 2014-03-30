@@ -11,7 +11,10 @@
 define('LIBS_PATH'		, PUBLIC_PATH.DS.'..'.DS.'libs');
 
 define('JS_PATH'		, PUBLIC_PATH.DS.'js');
+
 define('CSS_PATH'		, PUBLIC_PATH.DS.'css');
+define('CSS_THEME_PATH' , CSS_PATH.DS.'themes');
+
 define('IMG_PATH'		, PUBLIC_PATH.DS.'img');
 
 define('BASE_URI'		, str_replace('index.php', '', $_SERVER['SCRIPT_NAME']));

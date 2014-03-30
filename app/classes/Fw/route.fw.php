@@ -10,8 +10,6 @@ class Route_Fw {
 
     function LoadController($url) {
         
-        
-        
         $theme_name = Config_Fw::GetThemeName();
 
         if (!$url) {
