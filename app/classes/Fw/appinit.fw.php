@@ -10,7 +10,7 @@
  *
  * @author Ramón Albertí <admin@krainet.net at Krainet.net>
  */
-class AppInit {
+class AppInit_Fw {
     
     public function __construct() {
         $this->LoadStyles();
