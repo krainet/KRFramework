@@ -13,12 +13,17 @@ class Tools_Fw {
     }
 
     public static function FileExistsUri($path) {
-        error_log('Checking for file exists in '.PUBLIC_PATH . $_SERVER['REQUEST_URI']);
-        
+        error_log('Checking for file exists in ' . PUBLIC_PATH . $_SERVER['REQUEST_URI']);
+
         if (file_exists(PUBLIC_PATH . $_SERVER['REQUEST_URI']))
             return 1;
         else
             return 0;
+    }
+
+    public static function GetBaseUrl() {
+        $protocol = isset($_SERVER['HTTPS']) ? 'https' : 'http';
+        return $protocol . '://' . $_SERVER['HTTP_HOST'];
     }
 
 }

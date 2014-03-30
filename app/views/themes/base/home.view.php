@@ -1,8 +1,5 @@
-<html>
-<head>
-    <title>HOME TEMPLATE</title>
-</head>
-<body>
-HOME TEMPLATE
-</body>
-</html>
+<?php
+Modules_Fw::getModule('header');
+
+Modules_Fw::getModule('footer');
+?>
