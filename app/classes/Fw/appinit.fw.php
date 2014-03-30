@@ -18,6 +18,7 @@ class AppInit_Fw {
     
     private function LoadStyles() {
         include CONFIG_PATH . DS . 'frontcss.php';
+        include CONFIG_PATH . DS . 'frontjs.php';
     }
     
 }

@@ -46,23 +46,9 @@ class Assets_Fw {
 
     public static function getAllFrontJs() {
         $minified = false;
-        if (MINIFY_JS) {
-            $directory = JS_PATH . DS . 'generated' . DS . 'front';
-            if (is_dir($directory) && $handler = opendir($directory)) {
-                while (false !== ($entry = readdir($handler))) {
-                    if ($entry != '.' && $entry != '..') {
-                        preg_match('/.*[.](.*)/', $entry, $matches);
-                        if ($matches[1] == 'js') {
-                            echo '<script type="text/javascript" src="' . JS_URI . 'generated/front/' . $entry . '"></script>';
-                            $minified = true;
-                        }
-                    }
-                }
-            }
-        }
         if (!$minified && isset(self::$aFrontJs['routes'])) {
             foreach (self::$aFrontJs['routes'] as $route) {
-                echo '<script type="text/javascript" src="' . $route . '"></script>';
+                echo '<script type="text/javascript" src="' . $route . '"></script>'."\n";
             }
         }
         if (isset(self::$aFrontJs['raw'])) {
@@ -76,7 +62,7 @@ class Assets_Fw {
         $minified = false;
         if (!$minified && isset(self::$aFrontCss['routes'])) {
             foreach (self::$aFrontCss['routes'] as $route) {
-                echo '<link rel="stylesheet" href="' . $route . '"/>';
+                echo '<link rel="stylesheet" href="' . $route . '"/>'."\n";
             }
         }
         if (isset(self::$aFrontCss['raw'])) {
