@@ -6,10 +6,11 @@
  */
 
 ?>
+<html lang="es" ng-app>
 <meta charset="utf-8">
 <title>KR Framework</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="KRFramework Easy & Safe MVC Framework">
 <meta name="author" content="">
 <!-- IE Fix for HTML5 Tags -->
 <!--[if lt IE 9]>

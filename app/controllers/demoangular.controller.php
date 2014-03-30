@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Description of DemoBoot Controller
+ * Description of DemoAngular Controller
  *
  * @author Ramón Albertí
  */
-class Demoboot_Controller extends Core_Controller {
+class DemoAngular_Controller extends Core_Controller {
     
     private $theme;
 
@@ -18,7 +18,7 @@ class Demoboot_Controller extends Core_Controller {
     }
     
     protected function display() {
-        include(THEMES_PATH.DS.$this->theme.DS.'demoboot.view.php');
+        include(THEMES_PATH.DS.$this->theme.DS.'demoangular.view.php');
     }
 }
 

@@ -27,8 +27,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menú <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Demo Bootstrap</a></li>
-                            <li><a href="#">Demo Ángular</a></li>
+                            <li><a href="/demoboot">Demo Bootstrap</a></li>
+                            <li><a href="/demoangular">Demo Ángular</a></li>
                             <li><a href="#">Demo BBDD</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">Otros</li>
@@ -67,7 +67,7 @@
                         <h4 class="list-group-item-heading">Soporte Bootstrap v3.x</h4>
                         <p class="list-group-item-text">Disfruta de las funcionalidades de Bootstrap integradas.</p>
                     </a>
-                    <a href="#" class="list-group-item">
+                    <a href="/demoangular" class="list-group-item">
                         <h4 class="list-group-item-heading">Soporte Angular JS</h4>
                         <p class="list-group-item-text">Icluye la última versión de Ángular (Google) con algunos ejemplos.</p>
                     </a>
