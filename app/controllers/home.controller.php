@@ -10,7 +10,7 @@ class Home_Controller extends Core_Controller {
     private $theme;
 
     protected function pre_process() {
-        $this->theme = Config_Class::GetThemeName();
+        $this->theme = Config_Fw::GetThemeName();
     }
     
     protected function process() {

@@ -18,6 +18,6 @@ define('CONFIG_PATH'    , APP_PATH.DS.'config');
 require_once CONFIG_PATH.'/defines.php';
 require_once LIBS_PATH.'/KrAutoload.php';
 
-$Route = new Route_Class();
+$Route = new Route_Fw();
 $Route->LoadController($_SERVER['REQUEST_URI']);
 ?>

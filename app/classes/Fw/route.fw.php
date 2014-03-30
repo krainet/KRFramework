@@ -6,27 +6,22 @@
  * @author Ramón Albertí <admin@krainet.net at Krainet.net>
  */
 
-class Route_Class {
+class Route_Fw {
     
     
     
     function LoadController($url) {
-        $theme_name = Config_Class::GetThemeName();
+        $theme_name = Config_Fw::GetThemeName();
         
         if(!$url) {    
             $this->err();            
         } else {
         
             $aChopUri = explode('/', $url);
-            
             if(isset($aChopUri[1]))
                 $sController = $aChopUri[1];
-            
             if(isset($aChopUri[2]))
                 $sAction = $aChopUri[2];
-            
-            if($sController=='favicon.ico')
-                $sController='home';
             
             if($sController)
                 $sControllerClass = ucwords($sController).'_Controller';
@@ -41,7 +36,7 @@ class Route_Class {
     }
 
     function err() {
-        $theme_name = Config_Class::GetThemeName();
+        $theme_name = Config_Fw::GetThemeName();
         header("HTTP/1.1 404 Not Found");
         include(THEMES_PATH.$theme_name. "/not-found.view.php");
     }

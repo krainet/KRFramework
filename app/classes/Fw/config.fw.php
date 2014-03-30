@@ -12,7 +12,7 @@
  */
 
 
-class Fw_Config {
+class Config_Fw {
     
     var $conf_databases;
     var $conf_configuration;

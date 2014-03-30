@@ -11,7 +11,7 @@
  * @author Ramón Albertí Danes
  */
 
-class Fw_MySQL {
+class MySQL_Fw {
 
 	// Base variables
 	var $lastError;					// Holds the last error
@@ -38,7 +38,7 @@ class Fw_MySQL {
 	 * *******************/
 
 	function __construct($database = null, $username = null , $password = null, $hostname='localhost', $port=3306){
-        $Conf = new Config_Class();
+        $Conf = new Config_Fw();
         
         
         if($database==null || $username==null || $password==null) {

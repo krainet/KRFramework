@@ -11,7 +11,7 @@
  * @author Ramón Albertí
  */
 
-class Users_Model extends MySQL_Class {
+class Users_Model extends MySQL_Fw {
     
     public function delete_user($id_user=null) {
         if(!$user) {
