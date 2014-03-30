@@ -17,7 +17,9 @@
 <![endif]-->
 <!-- CSS -->
 <?php Assets_Fw::getAllFrontCss(); ?>
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- JS -->
+<?php Assets_Fw::getAllFrontJs(); ?>
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
 <!-- Fav and touch icons -->
 <!--
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
@@ -26,5 +28,5 @@
 <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="../assets/ico/favicon.png">
 -->
-<link rel="shortcut icon" href="<?php Tools_Fw::GetFavicon(); ?>">
+<link rel="shortcut icon" href="<?php echo Tools_Fw::GetFavicon(); ?>">
 
