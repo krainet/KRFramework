@@ -18,6 +18,7 @@ define('CONFIG_PATH', APP_PATH . DS . 'config');
 require_once CONFIG_PATH . '/defines.php';
 require_once LIBS_PATH . '/KrAutoload.php';
 
+$Init = new AppInit();
 
 if (!Tools_Fw::FileExistsUri($_SERVER['REQUEST_URI'])) {
     $Route = new Route_Fw();
