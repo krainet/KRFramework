@@ -63,7 +63,7 @@
 
             <div class="col-sm-4">
                 <div class="list-group">
-                    <a href="#" class="list-group-item active">
+                    <a href="/demoboot" class="list-group-item active">
                         <h4 class="list-group-item-heading">Soporte Bootstrap v3.x</h4>
                         <p class="list-group-item-text">Disfruta de las funcionalidades de Bootstrap integradas.</p>
                     </a>
