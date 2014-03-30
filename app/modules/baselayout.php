@@ -51,14 +51,7 @@
             <p><a href="http://www.krainet.net" class="btn btn-primary btn-lg" role="button">Ver más &raquo;</a></p>
         </div>
 
-        <div class="alert alert-success">
-            <strong>KR Framework</strong> Funcionando Correctamente!.
-        </div>
 
-
-        <div class="page-header">
-            <h1>Funcionalidades</h1>
-        </div>
         <div class="row">
 
             <div class="col-sm-4">
@@ -79,6 +72,9 @@
             </div><!-- /.col-sm-4 -->
         </div>
 
+        <div class="alert alert-success">
+            <strong>KR Framework</strong> Funcionando Correctamente!.
+        </div>
 
         <div class="well">
             <p>Krainet.NET - Ramón Albertí Danés (krainet@gmail.com)</p>

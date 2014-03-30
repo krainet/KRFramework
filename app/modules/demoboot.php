@@ -17,23 +17,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Bootstrap theme</a>
+                <a class="navbar-brand" href="/home">Bootstrap v3</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/home">Go Back</a></li>
+                    <li class="active"><a href="/home">Go Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menú <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="/demoboot">Demo Bootstrap</a></li>
+                            <li><a href="/demoangular">Demo Ángular</a></li>
+                            <li><a href="#">Demo BBDD</a></li>
                             <li class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
+                            <li class="dropdown-header">Otros</li>
+                            <li><a href="#">Manual de instalación</a></li>
+                            <li><a href="#">Como empezar</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -41,13 +41,17 @@
         </div>
     </div>
 
+    &nbsp;<p>
+        
+        
     <div class="container theme-showcase" role="main">
 
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <h1>Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+            <img src='public/img/fw/logobootstrap-small2.png'>
+            <h2>Disfruta de Bootstrap v3.x!</h2>
+            <p>Cómodo framework CSS que te ayudará en tus desarrollos.</p>
+            <p><a href="http://getbootstrap.com" class="btn btn-primary btn-lg" role="button">Aprende más &raquo;</a></p>
         </div>
 
 
