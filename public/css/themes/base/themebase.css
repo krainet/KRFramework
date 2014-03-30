@@ -1,0 +1,21 @@
+/* 
+    Document   : themebase
+    Created on : 30-mar-2014, 17:02:34
+    Author     : Ramón Albertí <admin@krainet.net at Krainet.net>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.body { 
+    background-color: black;
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+#mydiv {
+    background-color: blue;
+    border: 1px solid blue;
+    height: 100px;
+    width: 100px;
+}
+
+
