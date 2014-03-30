@@ -51,6 +51,7 @@ class Assets_Fw {
                 echo '<script type="text/javascript" src="' . $route . '"></script>'."\n";
             }
         }
+        
         if (isset(self::$aFrontJs['raw'])) {
             foreach (self::$aFrontJs['raw'] as $code) {
                 echo $code;
