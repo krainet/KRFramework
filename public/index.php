@@ -22,5 +22,6 @@ require_once LIBS_PATH . '/KrAutoload.php';
 if (!Tools_Fw::FileExistsUri($_SERVER['REQUEST_URI'])) {
     $Route = new Route_Fw();
     $Route->LoadController($_SERVER['REQUEST_URI']);
-}
+} 
+
 ?>
