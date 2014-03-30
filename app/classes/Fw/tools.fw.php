@@ -26,6 +26,11 @@ class Tools_Fw {
         return $protocol . '://' . $_SERVER['HTTP_HOST'];
     }
 
+    public static function GetFavicon() {
+        $protocol = isset($_SERVER['HTTPS']) ? 'https' : 'http';
+        return $protocol . '://' . $_SERVER['HTTP_HOST'].'public/favicon.ico';
+    }    
+    
 }
 
 ?>

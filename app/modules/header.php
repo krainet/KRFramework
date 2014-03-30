@@ -26,5 +26,5 @@
 <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="../assets/ico/favicon.png">
 -->
-<link rel="shortcut icon" href="<?php Tools_Fw::GetBaseUrl(); ?>">
+<link rel="shortcut icon" href="<?php Tools_Fw::GetFavicon(); ?>">
 

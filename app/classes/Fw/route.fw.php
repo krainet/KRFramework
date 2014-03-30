@@ -28,8 +28,6 @@ class Route_Fw {
             if (class_exists($sControllerClass)) {
                 error_log('Loading Controller:: ' . $sControllerClass);
                 $Controller = new $sControllerClass;
-            } else {
-                error_log($sController . ' is not a loadable Class');
             }
         }
     }
