@@ -26,6 +26,8 @@ class Route_Fw {
                 $sController = $aChopUri[1];
             if (isset($aChopUri[2]))
                 $sAction = $aChopUri[2];
+            else
+                $sAction = 'default';
 
             if ($sController)
                 $sControllerClass = ucwords($sController) . '_Controller';
