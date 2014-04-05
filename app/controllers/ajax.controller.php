@@ -11,6 +11,8 @@ class Ajax_Controller extends Core_Controller {
 
     protected function pre_process() {
         $this->theme = Config_Fw::GetThemeName();
+        $post_params = Tools_Fw::getVar('test');
+        error_log('POST::'.$post_params);
     }
     
     protected function process() {
