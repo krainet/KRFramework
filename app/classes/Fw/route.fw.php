@@ -34,7 +34,7 @@ class Route_Fw {
 
             if (class_exists($sControllerClass)) {
                 error_log('Loading Controller:: ' . $sControllerClass. ' with Action:: '.$sAction);
-                $Controller = new $sControllerClass;
+                $Controller = new $sControllerClass($sAction);
             }
         }
     }
