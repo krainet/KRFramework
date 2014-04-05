@@ -10,16 +10,16 @@
 
         //Prepare jTable
         $('#frond_users_crud').jtable({
-            title: 'Table of people',
+            title: 'Usuarios',
             paging: true,
             pageSize: 2,
             sorting: true,
             defaultSorting: 'Name ASC',
             actions: {
-                listAction: 'PersonActionsPagedSorted.php?action=list',
-                createAction: 'PersonActionsPagedSorted.php?action=create',
-                updateAction: 'PersonActionsPagedSorted.php?action=update',
-                deleteAction: 'PersonActionsPagedSorted.php?action=delete'
+                listAction: 'public/test_actions.php?action=list',
+                createAction: 'public/test_actions.php?action=create',
+                updateAction: 'public/test_actions.php?action=update',
+                deleteAction: 'public/test_actions.php?action=delete'
             },
             fields: {
                 PersonId: {

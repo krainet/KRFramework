@@ -7,8 +7,13 @@
  */
 class Route_Fw {
 
-
-    function LoadController($url) {
+    private $sCaction;
+    
+    public function __construct($action='default') {
+        $this->sCaction = $action;
+    }
+    
+    function LoadController($url,$action='default') {
         
         $theme_name = Config_Fw::GetThemeName();
 
@@ -26,7 +31,7 @@ class Route_Fw {
                 $sControllerClass = ucwords($sController) . '_Controller';
 
             if (class_exists($sControllerClass)) {
-                error_log('Loading Controller:: ' . $sControllerClass);
+                error_log('Loading Controller:: ' . $sControllerClass. ' with Action:: '.$sAction);
                 $Controller = new $sControllerClass;
             }
         }

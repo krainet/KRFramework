@@ -12,7 +12,7 @@
     &nbsp;<p>
 
     <div class="well">
-        <div id="frond_users_crud" style="width: 600px;"></div>
+        <div id="frond_users_crud" style="width: 800px;"></div>
     </div>
 
 

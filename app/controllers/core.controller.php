@@ -9,7 +9,12 @@
 
 abstract class Core_Controller {
     
-    public function __construct() {
+    private $sCaction;
+    
+    public function __construct($action='default') {
+        
+        $this->sCaction = $action;
+        
         $this->pre_process();
         $this->process();
         $this->display();
