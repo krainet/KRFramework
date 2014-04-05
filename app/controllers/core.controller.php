@@ -9,7 +9,7 @@
 
 abstract class Core_Controller {
     
-    private $sCaction;
+    public $sCaction;
     
     public function __construct($action='default') {
         
