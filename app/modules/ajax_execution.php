@@ -12,7 +12,7 @@
     &nbsp;<p>
 
     <div class="well">
-        <form name="ftest" method="post" action="ajax/call">
+        <form name="ftest" method="post" action="self">
             <input type="text" name="prueba" value=""><input type="submit" value="Enviar">
         </form>
     </div>
