@@ -31,3 +31,4 @@
 -->
 <link rel="shortcut icon" href="<?php echo Tools_Fw::GetFavicon(); ?>">
 
+<body role="document">

@@ -4,4 +4,6 @@
     <p>Krainet.NET &copy; Company <?php echo date('Y') ?></p>
 </div>
 
+</body>
+
 </html>
