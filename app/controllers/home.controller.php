@@ -14,7 +14,7 @@ class Home_Controller extends Core_Controller {
     }
     
     protected function process() {
-        
+        error_log('ACCION CARGADA:: '.$this->sCaction);
     }
     
     protected function display() {
