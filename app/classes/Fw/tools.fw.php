@@ -58,6 +58,7 @@ class Tools_Fw {
     }
 
     public static function getVar($key, $type = "default", $container = 'all') {
+        error_log('AVARS:: '.self::$aVars);
         $to_return = false;
         if ($container == 'all') {
             foreach (self::$aVars as $container => $vars) {
