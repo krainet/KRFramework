@@ -7,7 +7,7 @@
  */
 class Route_Fw {
 
-    private $sCaction;
+    public $sCaction;
     
     public function __construct($action='default') {
         $this->sCaction = $action;
