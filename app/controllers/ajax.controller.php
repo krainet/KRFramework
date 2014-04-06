@@ -24,7 +24,7 @@ class Ajax_Controller extends Core_Controller {
     
 	public function call($action) {
 		$method = Tools_Fw::getVar('action', 'default', 'post');
-        $method = $_POST['action'];
+        //$method = $_POST['action'];
         error_log('Method:: '.$method);
         
         /*
