@@ -47,6 +47,14 @@ class Tools_Fw {
         self::$aVars['cookie'] = $_COOKIE;
         //unset ($params, $_POST, $_GET, $_REQUEST);
     }
+    
+    private static function initRequest() {
+        self::$aVars['post'] = $_POST;
+        self::$aVars['get'] = $_GET;
+        self::$aVars['request'] = $_REQUEST;
+        self::$aVars['cookie'] = $_COOKIE;
+        //unset ($params, $_POST, $_GET, $_REQUEST);
+    }    
 
     public static function filter($params) {
         self::init($params);
@@ -58,7 +66,7 @@ class Tools_Fw {
     }
 
     public static function getVar($key, $type = "default", $container = 'all') {
-        //self::init();
+        self::initRequest();
         $to_return = false;
         if ($container == 'all') {
             foreach (self::$aVars as $container => $vars) {
@@ -67,10 +75,6 @@ class Tools_Fw {
                 }
             }
         } else {
-            error_log('KEY:: '.$key);
-            error_log('TYPE:: '.$type);
-            error_log('CONTAINER:: '.$container);
-            
             $to_return = (isset(self::$aVars[$container][$key])) ? self::$aVars[$container][$key] : false;
         }
         switch ($type) {
