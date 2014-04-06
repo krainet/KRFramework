@@ -30,5 +30,5 @@
 </div> <!-- /container -->
 
 
-<?php Modules_Fw::getModule('ajax/ajax'); ?>
+<?php Modules_Fw::getModule('ajax/ajaxtest'); ?>
 
