@@ -39,7 +39,7 @@ class Tools_Fw {
         return $protocol . '://' . $_SERVER['HTTP_HOST'] . '/public/favicon.ico';
     }
 
-    private static function init($params) {
+    private static function init($params=null) {
         self::$aVars['params'] = $params;
         self::$aVars['post'] = $_POST;
         self::$aVars['get'] = $_GET;
@@ -58,6 +58,7 @@ class Tools_Fw {
     }
 
     public static function getVar($key, $type = "default", $container = 'all') {
+        //self::init();
         $to_return = false;
         if ($container == 'all') {
             foreach (self::$aVars as $container => $vars) {
@@ -66,6 +67,10 @@ class Tools_Fw {
                 }
             }
         } else {
+            error_log('KEY:: '.$key);
+            error_log('TYPE:: '.$type);
+            error_log('CONTAINER:: '.$container);
+            
             $to_return = (isset(self::$aVars[$container][$key])) ? self::$aVars[$container][$key] : false;
         }
         switch ($type) {
