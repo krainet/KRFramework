@@ -24,23 +24,23 @@ class Ajax_Controller extends Core_Controller {
     
 	public function call($action) {
 		$method = Tools_Fw::getVar('action', 'default', 'post');
-        //$method = $_POST['action'];
-        error_log('Method:: '.$method);
-        
-        /*
 		$method = '_' . $method;
 		$params = Tools_Fw::getVar('params', 'default', 'post');
+        
+        error_log('METHOD:: '.$method.' and PARAMS:: '.$params);
+        
 		if (method_exists($this, $method)) {
 			$result = $this->$method($params);
 		} else {
 			$result = array('error' => "This method doesn't exists");
 		}
 		echo json_encode($result);
-         * 
-         */
-        return 1;
 		exit();
 	}
+    
+    public function _testAction() {
+        
+    }
 
 	public function upload() {
 		$folder = md5(time() . rand(0, 10000));

@@ -16,7 +16,8 @@
                 async: true,
                 type: 'POST',
                 data: {
-                    'action': 'testAction',                    
+                    'action': 'testAction',
+                    'params': $('form#ftest').serialize()
                 },
                 success: function(data){
                         alert('ok!');
@@ -24,6 +25,8 @@
                
             });           
         });        
+        
+        
 
     });
 
